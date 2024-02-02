@@ -80,19 +80,12 @@ console.log("FUNZIONI-ESERCIZIO 2 :", whoIsBigger(7, 3));
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
+function splitMe (str) {
+  const words = str.split(" ");
+  return words.map(str => `${str}`);
+}
 
-//const splitMe = function (str) {
-//  const words = str.split("");
-//  const result = [];
-
-//  for (let i = 0; i < words.length; i++) {
-//    const word = words[i];
-//    result.map (word.charAt(0).toUpperCase(1) + word.slice().toLowerCase());
-//}
-//  return result
-//};
-
-//console.log("FUNZIONI-ESERCIZIO 3 :", splitMe(" love coding"));
+console.log("FUNZIONI-ESERCIZIO 3 :", splitMe("I love coding"));
 
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
