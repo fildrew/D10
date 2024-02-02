@@ -1,0 +1,39 @@
+*{
+    border: box-sizing;
+
+}
+
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: blue;
+    font-size: large;
+}
+
+#container{
+    background-color: red;
+    font-weight: bolder;
+}
+
+table, tr,td,th{
+    border: 1px solid black;
+}
+
+th, td{
+    width: 200px;
+}
+
+.bcolor{
+    background-color: red;
+}
+
+section {
+    color: white;
+}
+
+a {
+    color: aqua;
+}
+
+.test {
+    background-color:chartreuse;
+}
