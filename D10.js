@@ -340,9 +340,9 @@ const deleteProp = (obj, str) => {
   return obj;
 };
 const Simon = {
-  nome: "Simon Nowell",
-  età: 87,
-  professione: "Show Host",
+  name: "Simon Nowell",
+  age: 87,
+  profession: "Show Host",
 };
 console.log("ARRAY & OGGETTI:ESERCIZIO 11 :", deleteProp(Simon, "age"));
 
