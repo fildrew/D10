@@ -415,13 +415,22 @@ console.log("ARRAY & OGGETTI:ESERCIZIO 16 :",sumAllTheYears());
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
-
-
+const searchByTitle = function(string){
+  return movies.filter((film) => film.Title.includes(string))
+}
+console.log("ARRAY & OGGETTI:ESERCIZIO 17 :",searchByTitle("Ring"));
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
-
+const searchAndDivide = function(string){
+  let liste ={};
+  let match =  movies.filter((film) => film.Title.includes(string));
+  let unmatch = movies.filter((film) => !film.Title.includes(string));
+  liste.match = match;
+  liste.unmatch = unmatch;
+  return liste;
+}
 
 
 /* ESERCIZIO 19
@@ -464,7 +473,7 @@ const printElementTagName = function(){
     console.log(x);
   }
 }
-console.log("ARRAY & OGGETTI:ESERCIZIO 22 :", printElementTagName());
+printElementTagName();
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
