@@ -87,12 +87,12 @@ console.log("FUNZIONI-ESERCIZIO 2 :", whoIsBigger(7, 3));
 
 //  for (let i = 0; i < words.length; i++) {
 //    const word = words[i];
-//    result.map(word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+//    result.map (word.charAt(0).toUpperCase(1) + word.slice().toLowerCase());
 //}
-// return result
+//  return result
 //};
 
-//console.log("FUNZIONI-ESERCIZIO 3 :", splitMe("I love coding"));
+//console.log("FUNZIONI-ESERCIZIO 3 :", splitMe(" love coding"));
 
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
@@ -115,7 +115,7 @@ console.log("FUNZIONI-ESERCIZIO 4b :", deleteOne("I love coding", false));
 */
 const onlyLetters = function (str) {
   return str.replace(/[0-9]/g, "");
-  //string.replace(/\d/g, "");
+
 };
 
 console.log("FUNZIONI-ESERCIZIO 5 :", onlyLetters("I have 4 dogs"));
@@ -133,12 +133,6 @@ const isThisAnEmail = function (str) {
   }
 };
 
-//for (let i = 0; i < str.length; i++) {
-// if (str[i] === "@" ) {
-//  return true;
-// } else
-//  return false;
-//}
 
 console.log("FUNZIONI-ESERCIZIO 6a :", isThisAnEmail("philedu30@gmail.com"));
 console.log("FUNZIONI-ESERCIZIO 6b :", isThisAnEmail("philedu30.com"));
@@ -419,6 +413,7 @@ const searchByTitle = function(string){
   return movies.filter((film) => film.Title.includes(string))
 }
 console.log("ARRAY & OGGETTI:ESERCIZIO 17 :",searchByTitle("Ring"));
+
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
@@ -433,7 +428,8 @@ const searchAndDivide = function(string){
 }
 
 console.log("ARRAY & OGGETTI:ESERCIZIO 18 :",searchAndDivide("Ring"));
-/* ESERCIZIO 18
+
+
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
@@ -498,6 +494,7 @@ const addListItem = function(){
 }
 
 console.log("ARRAY & OGGETTI:ESERCIZIO 24 :",("Add"));
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
@@ -511,6 +508,7 @@ buttons[0].addEventListener('click', addListItem);
 buttons[1].addEventListener('click', removeListItems);
 
 console.log("ARRAY & OGGETTI:ESERCIZIO 25 :",("Reset"));
+
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
@@ -534,6 +532,7 @@ console.log("ARRAY & OGGETTI:ESERCIZIO 26 :", ("tr coloured"));
   ***
 
 */
+
 
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
